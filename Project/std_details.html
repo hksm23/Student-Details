@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details Form</title>
+    <link rel="stylesheet" href="std_details.css">
+    <script src="std_details.js"></script>
+
+</head>
+<body>
+
+<div class="form-container">
+    <h1>Student Details</h1>
+
+    <form>
+        <table id="studentTable" border="5">
+            <tr>
+                <td>Name:</td>
+                <td>
+                    <input type="text" placeholder="First Name" />
+                    <input type="text" placeholder="Last Name" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>Roll No.:</td>
+                  <td><input type="text" placeholder="Roll No / Reg No" /></td>
+            </tr>
+
+            <tr>
+              <td>Branch:</td>
+              <td>
+                    <label><input type="checkbox"> CSE</label>
+                    <label><input type="checkbox"> CIVIL</label>
+                    <label><input type="checkbox"> EEE</label>
+                    <label><input type="checkbox"> VLSI</label>
+                    <label><input type="checkbox"> ME</label>
+                  </td>
+            </tr>
+
+            <tr>
+                <td>Marks:</td>
+                 <td><input type="text" placeholder="Marks Obtained"/></td>
+            </tr>
+        </table>
+
+        <div class="button-group">
+            <button type="button" onclick="addRow()">Add</button>
+            <button type="button" class="remove-btn" onclick="removeRow()">Remove</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
